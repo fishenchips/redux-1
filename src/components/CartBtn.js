@@ -1,4 +1,5 @@
 import React from "react";
+import classes from "../css/header.module.css";
 //useDispatch used for triggering cart to show/close, and useSelector will update the state and ui (value) of total cartQty
 import { useDispatch, useSelector } from "react-redux";
 
@@ -18,9 +19,9 @@ function CartBtn() {
   };
 
   return (
-    <button onClick={toggleCart}>
-      <p>Cart</p>
-      <p>{cartQty} </p>
+    <button className={classes.cartBtn} onClick={toggleCart}>
+      <span>Cart</span>
+      <span>{cartQty} </span>
     </button>
   );
 }

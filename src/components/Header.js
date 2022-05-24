@@ -1,13 +1,12 @@
 import React from "react";
 import CartBtn from "./CartBtn";
+import classes from "../css/header.module.css";
 
 function Header() {
   return (
-    <header>
-      <h1>Redux test - Welcome</h1>
-      <div>
-        <CartBtn />
-      </div>
+    <header className={classes.header}>
+      <h1 className={classes.headerTitle}>Redux test - Welcome</h1>
+      <CartBtn />
     </header>
   );
 }
