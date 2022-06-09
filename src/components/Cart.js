@@ -13,6 +13,7 @@ function Cart() {
           <CartItem
             key={item.id}
             item={{
+              id: item.id,
               title: item.name,
               quantity: item.quantity,
               totalPrice: item.totalPrice,
