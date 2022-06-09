@@ -9,7 +9,7 @@ function CartBtn() {
   //used to apply actions
   const dispatch = useDispatch();
 
-  //name of cartSlice = cart, which has a property of totalQty
+  //name of cartSlice = cart, which has a property of totalQty  -- used to render how many items in cart
   const cartQty = useSelector((state) => state.cart.totalQty);
 
   const toggleCart = () => {
