@@ -21,6 +21,8 @@ function Products() {
       <ul>
         {DUMMY_PRODUCTS.map((product) => (
           <ProductItem
+            //need to for the object to be added
+            id={product.id}
             key={product.id}
             price={product.price}
             title={product.title}
